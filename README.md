@@ -7,3 +7,6 @@ Web Development Projects Made So Far:
    
 2. Fully Responsive Page:
    Using HTML5, Bootstrap, alongwith custom CSS animations and rules. Also added some jQuery (isotope plugin) for fun.
+   
+3. Fully Responsive Page (from PSD):
+   Based on the given PSD, Created a responsive page in HTML5, Bootstrap, and added some custom css and jquery magic!
