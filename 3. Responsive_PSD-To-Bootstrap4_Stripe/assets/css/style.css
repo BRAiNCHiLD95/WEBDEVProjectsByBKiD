@@ -1,0 +1,454 @@
+@font-face {
+    font-family: 'Camphor';
+    src: url('CamphorPro-Regular.eot') format('eot'),
+         url('CamphorPro-Regular.woff') format('woff'),
+         url('CamphorPro-Regular.ttf')  format('truetype');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Camphor';
+    overflow-x: hidden;
+}
+
+#navbarStripe {
+    height:50px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #24b47e;
+}
+
+.navbrand {
+    display: none;
+}
+
+#home {
+    background: url('../images/Stripes.svg') no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    padding: 0px 0px 25px 0px;
+    height: 774px;
+}
+
+.content_home {
+    position: relative;
+    top: 150px;
+}
+
+.announcement {
+    color: #ffffff;
+    background: rgba(0,0,0,0.1); 
+    border-radius: 15px;
+    line-height: 10px; 
+    padding: 0px 0px 4px 0px;
+}
+
+.announcement:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#hanging_art * {
+    z-index: 10;
+}
+
+p {
+    color: #343a40;
+}
+
+.hanging_row1 {
+    position: absolute;
+    right: -8px;
+    top: 10%;
+    transform: scale(0.9);
+}
+
+.hanging_row1 #img1{
+    position: absolute;
+    bottom: -105px;
+    right: 80px;
+}
+
+.hanging_row2 {
+    position: absolute;
+    right: -35px;
+    top: 95%;
+    transform: scale(0.9);
+}
+
+.hanging_row2 #img3 {
+    position: absolute;
+    top: 70px;
+    right: 260px;
+}
+
+#products {
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+}
+
+h5.title,
+h6.title {
+    color: #24b47e;
+}
+
+#dev_area {
+    position: relative;
+    padding: 70px 0px 70px 0px;
+    z-index: 0;
+}
+
+#dev_area::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top: -50px;
+    z-index: -5;
+    transform-origin: top right;
+    transform: skew(0, -10deg);
+    background-color: #F6F9FC;
+}
+
+#dev_area::after {
+    content: "";
+    position: absolute;
+    top: 310px;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    background: #F6F9FC;
+    margin-bottom: 0px !important;
+}
+
+.nav-pills .nav-link {
+    color: #6772e5;
+    transition: all .3s;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #24b47e;
+    background-color: #ffffff;
+    transition: all 1s;
+    box-shadow: 2px 2px 0px 1px rgba(0,0,0,0.1);
+}
+
+#element {
+    margin-bottom: 0px;
+}
+
+#element img {
+    height: 350px;
+}
+
+.divider {
+    width: 100%;
+    margin: 10px 0px;
+    border-top:2px solid rgba(0,0,0,0.1);
+}
+
+#company {
+    position: relative;
+    top: 0;
+}
+
+#customer-logos{
+    padding: 50px 0px;
+}
+
+.company_btn {
+    color: #fff;
+    background: #6772e5;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    -webkit-transform: translate(-50%,5px) scale(.95);
+    transform: translate(-50%,5px) scale(.95);
+    opacity: 0;
+    -webkit-transition: .7s cubic-bezier(.19,1,.22,1);
+    transition: .7s cubic-bezier(.19,1,.22,1);
+}
+
+.company_hover ul {
+    display: flex;
+    max-width: 100%;
+    padding-left: 0px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transition: 1s cubic-bezier(.19,1,.22,1);
+    transition: 1s cubic-bezier(.19,1,.22,1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.company_hover_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.company_hover:hover .company_btn {
+    opacity: 1;
+    -webkit-transition: .7s cubic-bezier(.19,1,.22,1);
+    transition: .7s cubic-bezier(.19,1,.22,1);
+    transform: scale(1.2) translateX(-45%);
+}
+
+.company_hover:hover ul {
+    -webkit-transition: 1s cubic-bezier(.19,1,.22,1);
+    transition: 1s cubic-bezier(.19,1,.22,1);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+
+#support {
+    position: relative;
+    padding: 0px;
+    color: #343a40;
+}
+
+#support::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    transform: skewY(-10deg);
+    background-color: #F6F9FC;
+}
+
+#support::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 205px;
+    height: 50%;
+    width: 100%;
+    background-color: #F6F9FC;
+}
+
+#support .card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #9251ac;
+    text-decoration: none;
+}
+
+
+#support .card:hover {
+    filter: grayscale();
+    transform: scale(1.02);
+}
+
+#prefooter1,
+#prefooter2 {
+    margin-left: -28px;
+    max-width: 100%;
+}
+
+.support_end span{
+    color: #6772e5;
+}
+
+.prefooter_btns {
+    padding: 45px 70px;
+}
+
+.btn_prefooter{
+    background: #6772e5;
+    color: #ffffff;
+}
+
+.btn_prefooter2 {
+    background: #ffffff;
+    color: #6772e5;
+}
+
+.btn_prefooter:hover,
+.btn_prefooter2:hover{
+    transform: scale(1.01);
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 15px;
+    background-color: #F6F9FC;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#footer_links {
+    color: #6772e5;
+    text-decoration: none;
+}
+
+.greyish {
+    color: #92A0B2 !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbrand_in_li {
+        display: none;
+    }
+    #navbarStripe {
+        margin: 0 -17px;
+    }
+    .navbrand {
+        display: block;
+    }
+    .navbar-nav {
+        background: #343a40;
+        width: 100%;
+        text-align: center;
+    }
+    .hanging_row1,
+    .hanging_row2 {
+        display: none;
+    }
+    .head-content {
+        text-align: center;
+    }
+    #dev_area::before{
+        height: 70%;
+        top: -60px;
+    }
+    #dev_area::after{
+        height: 65%;
+        bottom: 20px;
+    }
+    #element img {
+        height: 200px;
+    }
+    #products {
+        top: -55px;
+    }
+    #support::after{
+        height: 80%;
+        bottom: 0px;
+    }
+    .prefooter_btns {
+        padding: 15px;
+    }
+    .btn_prefooter2 {
+        margin-top: 10px;
+        margin-left: 0px !important;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 990px) {
+    .navbrand_in_li {
+        display: none;
+    }
+    .navbrand {
+        display: block;
+    }
+    #navbarStripe {
+        margin: 0 -25px;
+    }
+    button#create {
+        position: relative;
+        top: 50px;
+        left: -245px;
+    }
+    .navbar-nav {
+        background: #343a40;
+        width: 100%;
+        text-align: center;
+    }
+    .hanging_row1 {
+        top: 25%;
+        right: -32px;
+        transform: scale(0.6);
+    }
+    .hanging_row2 {
+        top: 70%;
+        right: -59px;
+        transform: scale(0.6);
+    }
+    #dev_area {
+        padding: 10px 0px;
+    }
+    #dev_area::before{
+        height: 60%;
+        top: -60px;
+    }
+    #dev_area::after{
+        height: 50%;
+    }
+    #products {
+        position: relative;
+        top: -100px;
+        margin-bottom: -165px;
+    }
+    #element img {
+        height: 250px;
+    }
+    #support::after{
+        height: 35%;
+        top: 295px;
+    }
+    .prefooter_btns {
+        padding: 15px;
+    }
+    .btn_prefooter,
+    .btn_prefooter2 {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .hanging_row1 {
+        transform: scale(0.8);
+        top: 15%;
+        right: -16px;
+    }
+    .hanging_row2 {
+        transform: scale(0.8);
+        top: 52%;
+        right: -30px;
+    }
+    #dev_area::before {
+        height: 60%;
+    }
+    #dev_area::after{
+        height: 48%;
+        top: 400px;
+    }
+    .prefooter_btns {
+        padding: 40px 0px 35px 60px;
+    }
+}
