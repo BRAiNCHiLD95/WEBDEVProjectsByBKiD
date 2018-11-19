@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Stripe | Bootstrap</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="10">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="navbrand">
+                    <a class="navbar-brand text-white" href="main.html">
+                        <svg width="62" height="25">
+                            <title>Stripe</title>
+                            <path style="fill:white;" d="M5 10.1c0-.6.6-.9 1.4-.9 1.2 0 2.8.4 4 1.1V6.5c-1.3-.5-2.7-.8-4-.8C3.2 5.7 1 7.4 1 10.3c0 4.4 6 3.6 6 5.6 0 .7-.6 1-1.5 1-1.3 0-3-.6-4.3-1.3v3.8c1.5.6 2.9.9 4.3.9 3.3 0 5.5-1.6 5.5-4.5.1-4.8-6-3.9-6-5.7zM29.9 20h4V6h-4v14zM16.3 2.7l-3.9.8v12.6c0 2.4 1.8 4.1 4.1 4.1 1.3 0 2.3-.2 2.8-.5v-3.2c-.5.2-3 .9-3-1.4V9.4h3V6h-3V2.7zm8.4 4.5L24.6 6H21v14h4v-9.5c1-1.2 2.7-1 3.2-.8V6c-.5-.2-2.5-.5-3.5 1.2zm5.2-2.3l4-.8V.8l-4 .8v3.3zM61.1 13c0-4.1-2-7.3-5.8-7.3s-6.1 3.2-6.1 7.3c0 4.8 2.7 7.2 6.6 7.2 1.9 0 3.3-.4 4.4-1.1V16c-1.1.6-2.3.9-3.9.9s-2.9-.6-3.1-2.5H61c.1-.2.1-1 .1-1.4zm-7.9-1.5c0-1.8 1.1-2.5 2.1-2.5s2 .7 2 2.5h-4.1zM42.7 5.7c-1.6 0-2.5.7-3.1 1.3l-.1-1h-3.6v18.5l4-.7v-4.5c.6.4 1.4 1 2.8 1 2.9 0 5.5-2.3 5.5-7.4-.1-4.6-2.7-7.2-5.5-7.2zm-1 11c-.9 0-1.5-.3-1.9-.8V10c.4-.5 1-.8 1.9-.8 1.5 0 2.5 1.6 2.5 3.7 0 2.2-1 3.8-2.5 3.8z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarStripe" aria-controls="navbarStripe" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarStripe">
+                    <ul class="navbar-nav ml-lg-5 pl-lg-4">
+                        <li class="navbrand_in_li">
+                            <a class="navbar-brand text-white" href="main.html">
+                                <svg width="62" height="25">
+                                    <title>Stripe</title>
+                                    <path style="fill:white;" d="M5 10.1c0-.6.6-.9 1.4-.9 1.2 0 2.8.4 4 1.1V6.5c-1.3-.5-2.7-.8-4-.8C3.2 5.7 1 7.4 1 10.3c0 4.4 6 3.6 6 5.6 0 .7-.6 1-1.5 1-1.3 0-3-.6-4.3-1.3v3.8c1.5.6 2.9.9 4.3.9 3.3 0 5.5-1.6 5.5-4.5.1-4.8-6-3.9-6-5.7zM29.9 20h4V6h-4v14zM16.3 2.7l-3.9.8v12.6c0 2.4 1.8 4.1 4.1 4.1 1.3 0 2.3-.2 2.8-.5v-3.2c-.5.2-3 .9-3-1.4V9.4h3V6h-3V2.7zm8.4 4.5L24.6 6H21v14h4v-9.5c1-1.2 2.7-1 3.2-.8V6c-.5-.2-2.5-.5-3.5 1.2zm5.2-2.3l4-.8V.8l-4 .8v3.3zM61.1 13c0-4.1-2-7.3-5.8-7.3s-6.1 3.2-6.1 7.3c0 4.8 2.7 7.2 6.6 7.2 1.9 0 3.3-.4 4.4-1.1V16c-1.1.6-2.3.9-3.9.9s-2.9-.6-3.1-2.5H61c.1-.2.1-1 .1-1.4zm-7.9-1.5c0-1.8 1.1-2.5 2.1-2.5s2 .7 2 2.5h-4.1zM42.7 5.7c-1.6 0-2.5.7-3.1 1.3l-.1-1h-3.6v18.5l4-.7v-4.5c.6.4 1.4 1 2.8 1 2.9 0 5.5-2.3 5.5-7.4-.1-4.6-2.7-7.2-5.5-7.2zm-1 11c-.9 0-1.5-.3-1.9-.8V10c.4-.5 1-.8 1.9-.8 1.5 0 2.5 1.6 2.5 3.7 0 2.2-1 3.8-2.5 3.8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto pl-lg-5">
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link" href="#dev_area">Developers</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link" href="#company">Company</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mr-lg-5 pr-lg-2">
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#support">Support</a>
+                        </li>
+                        <li class="nav-item ml-lg-3">
+                            <a class="nav-link" href="#">Sign In <span class="fa fa-long-arrow-right"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="container-fluid">
+            <div class="container">
+                <div class="col-md-8 offset-lg-1">
+                    <div class="content_home">
+                        <a class="announcement" href="#">
+                            <span class="badge badge-pill badge-success pb-1">New</span>
+                            <span class="message">
+                                Introducing Radar: Modern Tools to help you beat fraud, fully integrated with your payments.
+                            </span>
+                        </a>
+                        <h1 class="mt-md-5 mt-3">The new standard in online payments</h1>
+                        <p class="my-4 col-md-8 p-0">Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.</p>
+                        <button class="btn font-weight-bold btn-success"><span class="font-weight-bold fa fa-terminal text-dark"></span> EXPLORE THE STACK</button>
+                        <button id="create" class="ml-md-5 mt-2 mt-md-0 btn btn-light font-weight-bold">CREATE ACCOUNT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <div class="col-md-6 text-right mb-5 pb-5">
+                    <div class="head-content my-3 py-3">
+                        <img class="float-lg-right ml-3" src="assets/images/setting_icon.svg" height="70" width="70">
+                        <h5 class="title">THE COMPLETE TOOLKIT<br>FOR INTERNET BUSINESS</h5>
+                    </div>
+                    <p class="px-2 mt-3 text-dark">Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously designed APIs and unmatched functionality help you create the best possible product for your users. Millions of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.</p>
+                    <a class="text-primary" href="#">Discover how businesses use Stripe <i class="fa fa-long-arrow-right text-primary"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="hanging_art">
+            <div class="hanging_row1">
+                <img id="img1" src="assets/images/salesforceSalesforce Ipad.svg">
+                <img id="img2" src="assets/images/digital oceanDIGITAL OCEAN Big Phone.svg">
+            </div>
+            <div class="hanging_row2">
+                <img id="img3" src="assets/images/Post Mates Device.svg">
+                <img id="img4" src="assets/images/asanaasana.svg">
+            </div>
+        </section>
+        <section id="dev_area">
+        <div class="container">
+            <div class="text-center col-md-8 offset-md-2 mt-5">
+                <img src="assets/images/dev_icon.svg" height="70" width="70">
+                <h5 class="my-3 title">DEVELOPERS FIRST</h5>
+                <p class="text-dark">We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust, scalable, flexible integrations. Because we eliminate needless complexity and extraneous details, you can get up and running with Stripe in just a couple of minutes.</p>
+            </div>
+            <div class="runkit_data my-1 py-3">
+                <div class="row">
+                    <div class="d-block col-md-9 text-dark">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payments-tab">
+                                <div id="element" class="col p-0"> 
+                                    <div class="card shadow">
+                                        <img src="assets/images/code_sample.png" class="embed-responsive">
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-customers" role="tabpanel" aria-labelledby="v-pills-customers-tab">
+                                <div id="element" class="col p-0"> 
+                                    <div class="card shadow">
+                                        <img src="assets/images/code_sample.png" class="embed-responsive">
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-subscriptions" role="tabpanel" aria-labelledby="v-pills-subscriptions-tab">
+                                <div id="element" class="col p-0"> 
+                                    <div class="card shadow">
+                                        <img src="assets/images/code_sample.png" class="embed-responsive">
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-reporting" role="tabpanel" aria-labelledby="v-pills-reporting-tab">
+                                <div id="element" class="col p-0"> 
+                                    <div class="card shadow">
+                                        <img src="assets/images/code_sample.png" class="embed-responsive">
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-lg-5 mt-3">
+                        <div class="nav flex-column text-left nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-payments" aria-selected="true"><span class="mr-2 fa fa-credit-card-alt"></span> Payments</a>
+                            <a class="nav-link" id="v-pills-customers-tab" data-toggle="pill" href="#v-pills-customers" role="tab" aria-controls="v-pills-customers" aria-selected="false"><span style="font-size:25px;" class="mr-2 fa fa-user"></span> Customers</a>
+                            <a class="nav-link pr-0" id="v-pills-subscriptions-tab" data-toggle="pill" href="#v-pills-subscriptions" role="tab" aria-controls="v-pills-subscriptions" aria-selected="false"><span style="font-size:20px;" class="mr-2 fa fa-repeat"></span> Subscriptions</a>
+                            <a class="nav-link" id="v-pills-reporting-tab" data-toggle="pill" href="#v-pills-reporting" role="tab" aria-controls="v-pills-reporting" aria-selected="false"><span style="font-size:20px;" class="mr-2 fa fa-bar-chart"></span> Reporting</a>
+                            <div class="divider"></div>
+                            <a class="nav-link" href="#" aria-selected="false">Full API Reference<span style="font-size:20px;" class="ml-1 fa fa-long-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="company" class="text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 border-right border-bottom py-3">
+                        <div class="col-12 text-left">
+                            <img src="assets/images/company1.svg" height="70" width="70">
+                        </div>
+                        <h6 class="title font-weight-bold ml-3 my-3">ALWAYS IMPROVING</h6>
+                        <p class="mx-md-0 mr-md-5 mr-0 mx-3 px-md-3 px-0">Stripe is an always-improving toolchain that gains new features every month. Our world-class engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to Alipay, building on Stripe means you get early access to the latest technologies.</p>
+                        <a class="ml-3" href="#">Learn about Stripe's products <span class="fa fa-arrow-right"></span></a>
+                    </div>
+                    <div class="col-md-6 border-bottom py-3">
+                        <div class="col-12 text-left">
+                            <img src="assets/images/company2.svg" height="70" width="70">
+                        </div>
+                        <h6 class="title font-weight-bold ml-3 my-3">GLOBAL SCALE</h6>
+                        <p class="mx-md-0 mr-md-5 mr-0 mx-3 px-md-3 px-0">We help power millions of businesses in 100+ countries and across nearly every industry. Headquartered in San Francisco, Stripe has 9 global offices and hundreds of people working to help transform how modern businesses are built and run.</p>
+                        <a class="ml-3" href="#">More about us <span class="fa fa-arrow-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="customer-logos">
+            <div class="container">
+                <div class="company_hover_container">
+                    <a class="company_hover">
+                        <span class="btn company_btn">See our customers</span>
+                        <ul>
+                            <li><img height="16px" alt="kickstarter" src="assets/images/customer-logos/kickstarter.svg"></li>
+                            <li><img height="16px" alt="instacart" src="assets/images/customer-logos/instacart.svg"></li>
+                            <li><img height="16px" alt="pinterest" src="assets/images/customer-logos/pinterest.svg"></li>
+                            <li><img height="16px" alt="lyft" src="assets/images/customer-logos/lyft.svg"></li>
+                            <li><img height="16px" alt="shopify" src="assets/images/customer-logos/shopify.svg"></li>
+                            <li><img height="16px" alt="opentable" src="assets/images/customer-logos/opentable.svg"></li>
+                            <li><img height="16px" alt="slack" src="assets/images/customer-logos/slack.svg"></li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="support">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <a href="#" class="col-lg-5 col-11 col-md-6 card shadow-sm my-3 px-0">
+                        <div class="media">
+                            <img id="prefooter1" class="align-self-center" src="assets/images/prefooter1.svg" height="130" width="130">
+                            <div class="media-body">
+                                <h5 class="my-3 py-3 pl-3">INTRODUCING RADAR <span class="fa fa-long-arrow-right"></span></h5>
+                                <p class="my-3 pb-3 px-3">Use Advanced Machine Learning that learns from 100,000+ global businesses to help your company beat fraud.</p>        
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-lg-5 col-11 col-md-6 offset-lg-1 card shadow-sm my-3 px-0">
+                        <div class="media">
+                            <img id="prefooter2" class="align-self-center" src="assets/images/prefooter2.svg" height="130" width="130">
+                            <div class="media-body">
+                                <h5 class="my-3 py-3 px-3">EXPLORE THE DOCS <span class="fa fa-long-arrow-right"></span></h5>
+                                <p class="my-3 pb-3 px-3">Start building your integration and accept your first payment in minutes. Stripe libraries are available in every language from Ruby to Go.</p>        
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pre_footer_end">
+                        <h3 class="my-3 ml-1"><span>Ready to get started?</span><br>
+                        Get in Touch, or create an account.</h3>
+                    </div>
+                    <div class="prefooter_btns col-md-6">
+                        <button class="btn btn_prefooter shadow-sm">CREATE STRIPE ACCOUNT</button>
+                        <button class="btn btn_prefooter2 shadow-sm ml-lg-3">CONTACT SALES</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section id="footer">
+                <div class="container">
+                    <div class="row mt-3 pt-3">
+                        <div class="col-md-3 col-6">
+                            <a class="d-block" id="footer_links" href="#"><span class="fa fa-location-arrow mr-2"></span>United States</a>
+                            <a class="d-block" id="footer_links" href="#"><span class="fa fa-comment mr-2 mt-3"></span>English</a>
+                            <a class="d-block mt-5 pt-3" href="#"><h6 class="pt-4 pt-lg-0 greyish">&copy; Stripe</h6></a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <h6 class="greyish font-weight-bold">PRODUCTS</h6>
+                            <ul class="list-unstyled">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Payments</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Subscription</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Connect</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Relay</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Atlas</a></li>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Pricing</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Customers</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Global</a></li>        
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-4 text-left">
+                            <h6 class="greyish font-weight-bold">DEVELOPERS</h6>
+                            <ul class="list-unstyled">
+                                <div class="row">
+                                    <div class="col">
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Documentation</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">API Reference</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">API Status</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Open source</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-4 text-left">
+                            <h6 class="greyish font-weight-bold">COMPANY</h6>
+                            <ul class="list-unstyled">
+                                <div class="row">
+                                    <div class="col">
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">About</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Blog</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Jobs</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Press</a></li>
+                                    </div>
+                                </div>
+                            </ul>                        
+                        </div>
+                        <div class="col-md-2 col-4 text-left">
+                            <h6 class="greyish font-weight-bold">RESOURCES</h6>
+                            <ul class="list-unstyled">
+                                <div class="row">
+                                    <div class="col">
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Support</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Contact</a></li>
+                                        <li class="list-item"><a class="greyish font-weight-normal" id="footer_links" href="#">Privacy & Terms</a></li>
+                                    </div>
+                                </div>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
