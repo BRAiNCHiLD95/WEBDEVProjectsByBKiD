@@ -1,6 +1,6 @@
 # WEBDEV Projects By BKiD (Brian Sam Thomas)
 
-DEMOS - https://brainchild95.github.io/WEBDEVProjectsByBKiD/
+<h2><a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/">HomePage to ALL DEMOS</a></h2>
 
 Web Development Projects Made So Far: 
 
@@ -13,5 +13,5 @@ Web Development Projects Made So Far:
 <h3>3. Fully Responsive Page (from PSD): <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/3.%20Responsive_PSD-To-Bootstrap4_Stripe/main.html">Demo</a></h3>
    <em>Based on the given PSD, Created a responsive page in HTML5, Bootstrap, and added some custom css and jquery magic!</em>
    
-<h3>4. Fully Functional Website (FrontEnd & BackEnd - PHP based): <a><abbr title="Not possible on Github Pages as per ToS.">Demo</abbr></a></h3>
+<h3>4. Fully Functional Website (FrontEnd & BackEnd - PHP based): <em><u>Demo not possible on GithubPages as per ToS.</u></em></h3>
    <em>Based on ArtonCapital's arton tools section. A revamp of 3 of those tools using PHP, MySQL, AJAX. 4th tool was completed using <a href="https://www.markuslerner.com/#travelscope">Travelscope</a> by Markus Lerner. A completely responsive site made with Bootstrap4, HTML5, CSS3, and jQuery3.1 </em>
