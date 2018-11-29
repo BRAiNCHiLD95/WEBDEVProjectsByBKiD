@@ -1,3 +1,6 @@
+---
+permalink: index.html
+---
 # WEBDEV Projects By BKiD (Brian Sam Thomas)
 
 <h2><a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/">HomePage to ALL DEMOS</a></h2>
