@@ -10,55 +10,63 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <style>
        body, html {
-          height: 100% !important;
+         height: 100%;
+         margin: 0;
+         padding: 0;
+         overflow: none;
+         font-size: 1rem;
+      }
+      #loader {
+         height: 210px;
+         width: 210px;
+         position: relative;
+         top: 50%;
+         transform: translate(0%, -50%); 
+      }
+      #loader img {
+         display: block;
+         width: 100%;
+      }
+      #page_content {
+         display: none;
+      }
+       .card-body {
+          position: relative;
+          height: 300px;
+       }
+       .card-body p.card-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 20px;
        }
     </style>
 </head>
-<body>
-   <div class="container">
-      <h1 class="text-center">MY WORK</h1>
-      <div class="row">
-         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-         </div>
-         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-         </div>
-         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-         </div>
-         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-         </div>         
+
+<div id="loader" class="col-md-4 mx-auto">
+   <img src="loader.svg">
+   <h2 class="text-center my-3 text-primary">Loading..</h2>
+</div>
+
+<body onload="myFunction()" style="margin:0;">
+   <script>
+      var myVar;
+      function myFunction() {
+         myVar = setTimeout(showPage, 1500);
+      }
+      function showPage() {
+         document.getElementById("loader").style.display = "none";
+         document.getElementById("page_content").style.display = "block";
+      }
+   </script>
+
+   <section class="animate" id="page_content">
+      <div class="container">
+         <h1 class="text-center my-3">MY WORKS</h1>
+         
       </div>
-   </div>
+   </section>
 </body>
 </html>
