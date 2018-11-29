@@ -1,9 +1,9 @@
 ---
 permalink: index.html
 ---
-# WEBDEV Projects By BKiD (Brian Sam Thomas)
+<h2><a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/">View Portfolio HomePage</a></h2>
 
-<h2><a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/">HomePage to ALL DEMOS</a></h2>
+# WEBDEV Projects By BKiD (Brian Sam Thomas) #
 
 Web Development Projects Made So Far: 
 
