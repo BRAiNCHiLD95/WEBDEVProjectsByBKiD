@@ -4,13 +4,15 @@ DEMOS - https://brainchild95.github.io/WEBDEVProjectsByBKiD/
 
 Web Development Projects Made So Far: 
 
-<h3>1. Fully Responsive Page:</h3> <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/1.%20Responsive_HTML5-CSS3/index.html">Demo</a>
-
+<h3>1. Fully Responsive Page:</h3>
+   <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/1.%20Responsive_HTML5-CSS3/index.html">Demo</a>
+   <br>
    <em>Using only HTML5 and CSS3 with media rules for 3 breakpoints (320px, 768px and 992px). Mobile-First Design.</em>
    
-<h3>2. Fully Responsive Page:<h3> <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/2.%20Responsive_HTML5-CSS3-Bootstrap4-jQuery/index.html">Demo</a>
-   
+<h3>2. Fully Responsive Page:</h3>
+   <br>
    <em>Using HTML5, Bootstrap, alongwith custom CSS animations and rules. Also added some jQuery (isotope plugin) for fun.</em>
+   <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/2.%20Responsive_HTML5-CSS3-Bootstrap4-jQuery/index.html">Demo</a>
    
 <h3>3. Fully Responsive Page (from PSD):</h3> <a href="https://brainchild95.github.io/WEBDEVProjectsByBKiD/3.%20Responsive_PSD-To-Bootstrap4_Stripe/main.html">Demo</a>
 
