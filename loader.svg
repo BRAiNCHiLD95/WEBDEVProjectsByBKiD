@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93 93">
+  <defs>
+    <linearGradient id="a" x1="14.5" y1="46.5" x2="78.5" y2="46.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0cf"/>
+      <stop offset="0.48" stop-color="#00ffc8"/>
+      <stop offset="1" stop-color="#0cf"/>
+    </linearGradient>
+    <linearGradient id="b" x1="28.83" y1="47" x2="64.17" y2="47" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6cc66"/>
+      <stop offset="0.48" stop-color="#988dbf"/>
+      <stop offset="1" stop-color="#4bff65"/>
+    </linearGradient>
+  </defs>
+  <title>loader</title>
+  <circle cx="46.5" cy="46.5" r="32" fill="url(#a)"/>
+  <circle cx="32" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite" />
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </circle>
+  <circle cx="38" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      begin="0.2"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite"/>
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </circle>
+  <circle cx="44" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      begin="0.3"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite"/>
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/>   
+  </circle>
+  <circle cx="50" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      begin="0.4"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite"/>
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/>      
+  </circle>
+  <circle cx="56" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      begin="0.5"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite"/>
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </circle>
+  <circle cx="62" cy="47" r="2.5" fill="url(#b)">
+    <animateTransform id="inner"
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      begin="0.6s"
+      dur="1s"
+      values="0,3;0,-3;0,3"
+      repeatCount="indefinite"/>
+    <animate attributeName="fill"
+      values="#988dbf;#0cf;#988dbf"
+      dur="1s"
+      repeatCount="indefinite"/> 
+  </circle>
+  <circle cx="46.5" cy="46.5" r="46" fill="none" stroke="#3fa9f5" stroke-miterlimit="10" stroke-dasharray="13">
+    <animateTransform id="dotted"
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 46.5 46.5"
+      to="360 46.5 46.5"
+      dur="5s"
+      repeatCount="indefinite"/>
+  </circle>
+</svg>
