@@ -8,24 +8,6 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
-#loader {
-    height: 210px;
-    width: 210px;
-    position: relative;
-    margin: 0 auto;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-
-#loader img {
-    display: block;
-    width: 100%;
-}
-
-#page_content {
-    display: none;
-}
-
 .sidenav-trigger i {
     font-size: 30px;
     color: #69f0ae;
@@ -113,4 +95,18 @@ li#myworks a {
     color: #69f0ae;
     opacity: 0.5;
     font-size: 20px;
+}
+
+div#home-carousel {
+    height: 540px !important;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+    div#home-carousel {
+        height: 540px;
+    }    
+}
+
+.carousel-item .card {
+    padding: 0px;
 }
