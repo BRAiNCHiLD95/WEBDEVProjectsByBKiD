@@ -1,0 +1,116 @@
+body, html {
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#loader {
+    height: 210px;
+    width: 210px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#loader img {
+    display: block;
+    width: 100%;
+}
+
+#page_content {
+    display: none;
+}
+
+.sidenav-trigger i {
+    font-size: 30px;
+    color: #69f0ae;
+    opacity: 0.5;
+}
+
+.sidenav-trigger i:hover {
+    opacity: 1;
+}
+
+a.brand-logo {
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+a.brand-logo > span {
+    color: #69f0ae;
+}
+
+a.brand-logo:hover {
+    color: #69f0ae !important;
+}
+
+a.brand-logo:hover > span {
+    color: #ffffff !important;
+}
+
+nav ul li a:hover {
+    background-color: transparent !important;
+    color: #69f0ae;
+}
+
+nav ul li a {
+    color : #ffffff;
+}
+
+ul.sidenav {
+    background-color: #070707;
+}
+
+li.card {
+    margin: 0px;
+    color: #ffffff;
+}
+
+li.card .card-content {
+    padding: 2px 20px;
+}
+
+li.card .card-content h5 {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+li.card .card-content h6 {
+    margin: 0px 0px 10px;
+}
+
+.connect {
+    text-align: center;
+}
+
+.connect a i {
+    font-size: 30px;
+    padding: 0px 8px;
+    color: #69f0ae;
+    opacity: 0.5;
+    transform: skewY(-5deg) scale(1);
+    transition: all ease-in-out .5s;
+}
+
+.connect a:hover i {
+    opacity: 1;
+    transform: skewY(-10deg) scale(1.2);
+    transition: all ease-in-out .5s;
+}
+
+li#myworks i {
+    font-size: 25px;
+    color: #69f0ae !important;
+    transform: skewY(-5deg) scale(1);
+}
+
+li#myworks a {
+    color: #69f0ae;
+    opacity: 0.5;
+    font-size: 20px;
+}

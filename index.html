@@ -2,71 +2,100 @@
 <html>
    <head>
     <meta charset="utf-8">
-    <title>Brian Sam Thomas | Web Portfolio</title>
+    <title>Brian Sam Thomas | Portfolio </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Open+Sans|Material+Icons|Nunito" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <style>
-       body, html {
-         height: 100%;
-         margin: 0;
-         padding: 0;
-         overflow: none;
-         font-size: 1rem;
-      }
-      #loader {
-         height: 210px;
-         width: 210px;
-         position: relative;
-         top: 50%;
-         transform: translate(0%, -50%); 
-      }
-      #loader img {
-         display: block;
-         width: 100%;
-      }
-      #page_content {
-         display: none;
-      }
-       .card-body {
-          position: relative;
-          height: 300px;
-       }
-       .card-body p.card-text {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          padding: 20px;
-       }
     </style>
 </head>
 
-<div id="loader" class="col-md-4 mx-auto">
+<div id="loader" class="col m4">
    <img src="loader.svg">
-   <h2 class="text-center my-3 text-primary">Loading..</h2>
+   <h4 class="center-align light-blue-text">Loading...</h4>
 </div>
 
 <body onload="myFunction()" style="margin:0;">
    <script>
       var myVar;
       function myFunction() {
-         myVar = setTimeout(showPage, 1500);
+         myVar = setTimeout(showPage, 100);
       }
       function showPage() {
          document.getElementById("loader").style.display = "none";
          document.getElementById("page_content").style.display = "block";
       }
    </script>
-
-   <section class="animate" id="page_content">
-      <div class="container">
-         <h1 class="text-center my-3">MY WORKS</h1>
-         
+   <section class="wrapper" id="page_content">
+      <!-- Navbar -->
+      <div class="navbar-fixed">
+         <nav class="black z-depth-4">
+            <div class="nav-wrapper">
+               <a href="index.html" class="brand-logo right">BR<span>i</span>AN</a>
+               <a href="#" data-target="slide-out" class="show-on-medium-and-up sidenav-trigger"><i class="fa fa-bars"></i></a>
+            </div>
+         </nav>
       </div>
+      <ul id="slide-out" class="sidenav">
+         <li class="card transparent z-depth-2">
+            <div class="card-content center-align">
+               <h5>Brian Sam Thomas</h5>
+               <img src="brian.jpg" height="150px" width="150px" class="responsive-img circle">
+               <h6>A Polyglot Programmer,<br>Full MEAN Stack Web Developer, Machine Learning Enthusiast, and a Musician.</h6>
+               <div class="connect">
+                  <a href="tel:+91-7507806915"><i class="fa fa-phone"></i></a>
+                  <a href="mailto:thebrainchild95@gmail.com"> <i class="fa fa-envelope"></i></a>
+                  <a href="https://github.com/BRAiNCHiLD95/"> <i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/brian-sam-thomas-b48259121/"> <i class="fa fa-linkedin"></i></a>
+               </div>
+            </div>
+         </li>
+         <div class="divider"></div>
+         <li id="myworks">
+            <a href="#"><i class="fa fa-folder-open-o"></i> My Works</a>
+         </li>
+      </ul>
+      <div id="home">
+         <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+               <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+               <h2>First Panel</h2>
+               <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+               <h2>Second Panel</h2>
+               <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+               <h2>Third Panel</h2>
+               <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+               <h2>Fourth Panel</h2>
+               <p class="white-text">This is your fourth panel</p>
+            </div>
+         </div>
+      </div>
+      <!-- Container begins -->
+      <div class="container">
+      </div>
+      <!-- Container ends -->
    </section>
+   <script>
+      $(document).ready(function(){
+         M.AutoInit();
+         $('.sidenav').sidenav('draggable', true);
+         $('.carousel.carousel-slider.center').carousel({
+            fullWidth: true,
+            indicators: true
+         });
+      });
+   </script>
 </body>
 </html>
